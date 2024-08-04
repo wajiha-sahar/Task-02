@@ -1,0 +1,56 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.profile-card {
+  border: 1px solid #e3e6f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.profile-card .card-body {
+  display: flex;
+  align-items: center;
+}
+
+.profile-card .img-fluid {
+  max-width: 100px;
+  margin-right: 20px;
+}
+
+.profile-card .contact-btn {
+  margin-top: 10px;
+}
+
+.navbar {
+  margin-bottom: 30px;
+}
+
+.nav-link {
+  font-size: 16px;
+  margin-right: 15px;
+}
+
+.nav-tabs {
+  border-bottom: none; /* Remove bottom border from the tabs */
+}
+
+.nav-tabs .nav-link {
+  color: #000; /* Black color for all tab links */
+  border: none; /* Remove border from all tab links */
+}
+
+.nav-tabs .nav-link.active {
+  color: #ffc107 !important; /* Yellow color for the active tab link */
+  border: none; /* Remove border from the active tab link */
+  position: relative; /* Needed to position the underline */
+}
+
+.nav-tabs .nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -1px; /* Position underline at the bottom */
+  left: 0;
+  right: 0;
+  height: 3px; /* Height of the underline */
+  background-color: #ffc107; /* Yellow underline */
+}
